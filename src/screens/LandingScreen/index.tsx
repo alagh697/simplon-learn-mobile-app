@@ -5,8 +5,8 @@ import AppColors from '../../styles/color'
 import { MaterialIcons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 
-export default function LandingScreen() {
-    const navigation = useNavigation();
+export default function LandingScreen({navigation}:any) {
+   
 
   const handleNavigate = () => {
     navigation.navigate('BottomTabNav'); 
