@@ -5,6 +5,7 @@ import HomeScreen from '../screens/HomeScreen';
 import MyCoursesScreen from '../screens/MyCourses';
 import TabBarIcon from '../components/TabBar/TabBarIcon';
 import AppColors from '../styles/color';
+import SchoolScreen from '../screens/SchoolScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -28,7 +29,12 @@ export default function BottomTabNav() {
             <TabBarIcon iconName='school' iconColor={color} title='Mes cours'/>,
         }}
         />
-        {/* <Tab.Screen name="Search" component={SearchScreen} /> */}
+        <Tab.Screen name="Schools" component={SchoolScreen} 
+        options={{
+            tabBarIcon: ({ color }) => 
+            <TabBarIcon iconName='location-city' iconColor={color} title='Centres'/>,
+        }}
+        />
         
       </Tab.Navigator>
   )
