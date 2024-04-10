@@ -9,7 +9,7 @@ export default function LandingScreen({navigation}:any) {
    
 
   const handleNavigate = () => {
-    navigation.navigate('BottomTabNav'); 
+    navigation.navigate('Register'); 
   };
   return (
     <View style={styles.container}>

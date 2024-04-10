@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "127050873964",
+    "project_id": "simplon-learn",
+    "storage_bucket": "simplon-learn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127050873964:android:d96bc145fb61ab1350ec49",
+        "android_client_info": {
+          "package_name": "com.cda6.simplonlearn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJDANacU9PXZgU-KX6eOLb-1Q5-UJSwwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
