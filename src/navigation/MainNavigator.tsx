@@ -7,6 +7,7 @@ import LandingScreen from '../screens/LandingScreen';
 import { createStackNavigator } from '@react-navigation/stack';
 import BottomTabNav from './BottomTabNav';
 import RegisterScreen from '../screens/RegisterScreen';
+import Login from '../screens/LoginScreen';
 
 
 const Stack = createStackNavigator();
@@ -16,6 +17,7 @@ const MainNavigator: React.FC = () => {
     <Stack.Navigator>
         <Stack.Screen name="Landing" component={LandingScreen} options={{ headerShown: false }}/>
         <Stack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }}/>
+        <Stack.Screen name="Login" component={Login} options={{ headerShown: false }}/>
         <Stack.Screen name="BottomTabNav" component={BottomTabNav}  options={{ headerShown: false  }}/>
         
         <Stack.Screen name="Account" component={AccountScreen} />
