@@ -4,8 +4,10 @@ import styles from './style'
 import CourseStudents from '../CourseStudents'
 import { MaterialIcons } from '@expo/vector-icons';
 import AppColors from '../../../styles/color';
+import { useNavigation } from '@react-navigation/native';
 
-export default function CourseDetailsModal({visible, onClose, course}:any) {
+export default function CourseDetailsModal({ visible, onClose, course}:any) {
+  const navigation = useNavigation<any>()
   return (
     <Modal
       visible={visible}
@@ -19,7 +21,9 @@ export default function CourseDetailsModal({visible, onClose, course}:any) {
           <Text style={styles.description}>{course.chapterCount}{` chapitres`}</Text>
           <CourseStudents/>
           <TouchableOpacity 
-          onPress={onClose}
+          onPress={() => {navigation.navigate('Course', {course: course})
+        onClose()
+        }}
           style={styles.button}>
             <Text style={styles.buttonText}>
                 {`Rejoindre le cours`}

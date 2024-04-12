@@ -8,6 +8,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import BottomTabNav from './BottomTabNav';
 import RegisterScreen from '../screens/RegisterScreen';
 import Login from '../screens/LoginScreen';
+import CourseDetailScreen from '../screens/CourseDetailScreen';
 
 
 const Stack = createStackNavigator();
@@ -19,7 +20,7 @@ const MainNavigator: React.FC = () => {
         <Stack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }}/>
         <Stack.Screen name="Login" component={Login} options={{ headerShown: false }}/>
         <Stack.Screen name="BottomTabNav" component={BottomTabNav}  options={{ headerShown: false  }}/>
-        
+        <Stack.Screen name="Course" component={CourseDetailScreen} />
         <Stack.Screen name="Account" component={AccountScreen} />
       </Stack.Navigator>
   );
